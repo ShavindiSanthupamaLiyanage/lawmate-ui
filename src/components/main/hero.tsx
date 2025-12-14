@@ -1,23 +1,23 @@
 import React from 'react';
 import '../../styles/hero.css';
-// import StatItem from "../StatItem";
+import StatItem from "../statItem";
 
-// interface Stat {
-//   number: string;
-//   label: string;
-//   style?: React.CSSProperties;
-//   numberClassName?: string;
-//   labelClassName?: string;
-//   delay?: number;
-// }
+interface Stat {
+  number: string;
+  label: string;
+  style?: React.CSSProperties;
+  numberClassName?: string;
+  labelClassName?: string;
+  delay?: number;
+}
 
 const Hero: React.FC = () => {
-  // const stats: Stat[] = [
-  //   { number: "500+", label: "Verified Lawyers", delay: 0, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties },
-  //   { number: "10,000+", label: "Cases Resolved", delay: 200, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties },
-  //   { number: "98%", label: "Client Satisfaction", delay: 400, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties },
-  //   { number: "24/7", label: "Support Available", delay: 600, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties }
-  // ];
+  const stats: Stat[] = [
+    { number: "500+", label: "Verified Lawyers", delay: 0, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties },
+    { number: "10,000+", label: "Cases Resolved", delay: 200, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties },
+    { number: "98%", label: "Client Satisfaction", delay: 400, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties },
+    { number: "24/7", label: "Support Available", delay: 600, style: { '--stat-number-color': '#0f172a' } as React.CSSProperties }
+  ];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* <div className="stats-grid">
+        <div className="stats-grid">
           {stats.map((s, i) => (
             <StatItem
               key={i}
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
               labelClassName={s.labelClassName}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );
