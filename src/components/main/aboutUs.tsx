@@ -50,7 +50,7 @@ const AboutUs: React.FC = () => {
         },
         {
             name: "Pasindu Kaushalya",
-            designation: "Machine Learning Engineer",
+            designation: "Full Stack Developer",
             image: pasinduPhoto,
             github: "https://github.com/dragonrator",
             linkedin: "https://www.linkedin.com/in/pasindu-kaushalya-134b25282"
